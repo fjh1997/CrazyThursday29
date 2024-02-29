@@ -9,7 +9,7 @@ def find_leap_year():
         J = year // 100
         K = year % 100
         q = 29
-        m = 14  # 对应到上一年的2月
+        m = 14  # 对应到下一年的2月
         h = (q + (13*(m+1))//5 + K + (K//4) + 5 - J) % 7
         if m==14 and ( q==29 or q ==28) and  isleap(year+1)==False :
             continue
